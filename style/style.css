@@ -131,6 +131,7 @@ margin-bottom:10px;
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:30px;
+list-style:none;
 }
 
 .card{
@@ -200,6 +201,47 @@ box-shadow:0 5px 15px rgba(0,0,0,0.05);
     .web-item img {
         height: auto;
     }
+}
+
+/* Buttons for previews */
+.web-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-top:16px;
+}
+
+.site-btn{
+    background:#0077ff; /* new color */
+    color:white;
+    padding:8px 14px; /* smaller */
+    border-radius:8px;
+    border:none;
+    cursor:pointer;
+    font-weight:600;
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.site-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Preview image styling */
+#site-preview{
+    margin-top:18px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+}
+
+#preview-img{
+    max-width:520px; /* smaller preview */
+    width:90%;
+    height:auto;
+    border-radius:10px;
+    display:none;
+    box-shadow:0 10px 30px rgba(0,0,0,0.35);
 }
 
 /* CONTACT */
